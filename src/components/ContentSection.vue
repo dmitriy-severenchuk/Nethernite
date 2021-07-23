@@ -11,6 +11,7 @@
           item-key="hits"
           :custom-filter="filterOnlyCapsText"
           @click:row="rowClick"
+          id="table"
         >
           <template v-slot:top>
             <v-text-field
@@ -33,7 +34,7 @@
           <v-card-text>
             <span
               style="
-                font-weight: 700;
+                font-weight: 600;
                 text-transform: uppercase;
                 letter-spacing: 0.07em;
               "
@@ -44,7 +45,7 @@
           <v-card-text>
             <span
               style="
-                font-weight: 700;
+                font-weight: 600;
                 text-transform: uppercase;
                 letter-spacing: 0.07em;
               "
@@ -55,7 +56,7 @@
           <v-card-text>
             <span
               style="
-                font-weight: 700;
+                font-weight: 600;
                 text-transform: uppercase;
                 letter-spacing: 0.07em;
               "
@@ -66,7 +67,7 @@
           <v-card-text>
             <span
               style="
-                font-weight: 700;
+                font-weight: 600;
                 text-transform: uppercase;
                 letter-spacing: 0.07em;
               "
@@ -75,7 +76,15 @@
             - {{ modalData.tags.latest }}
           </v-card-text>
           <v-card-text>
-            Last 5 versions - {{ modalData.versions }}
+            <span
+              style="
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.07em;
+              "
+              >Last 5 versions</span
+            >
+            - {{ modalData.versions }}
           </v-card-text>
           <v-divider></v-divider>
 
@@ -162,3 +171,17 @@ export default {
 };
 </script>
 
+<style lang="scss">
+#table.v-data-table {
+  min-height: calc(100vh - 132px);
+  position: relative;
+  padding-bottom: 60px;
+}
+
+#table .v-data-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+</style>

@@ -6,7 +6,7 @@
           style="
             text-decoration: none;
             color: white;
-            font-size: 26px;
+            font-size: 1.7em;
             letter-spacing: 0.05em;
             font-weight: 700;
             margin-right: 150px;
@@ -16,7 +16,7 @@
         <p
           style="
             color: white;
-            font-size: 20px;
+            font-size: 1.2em;
             letter-spacing: 0.05em;
             font-weight: 500;
             margin: 0;
